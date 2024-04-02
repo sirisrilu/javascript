@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .demo{
+       display:flex;
+        flex-wrap: wrap; 
+       margin:20px;
+       padding-left:50px;
+    }
+    .card img{
+        width:100%;
+        margin:5px;
+        padding-right:40px;
+    }
+</style>
+<body>
+    <form>
+<input type="number" id="minvalue"/>
+<input type="number" id="maxvalue"/>
+<input type="button"  class="submit" value="filter"/>
+    </form>
+    <div class="container demo m-5" style="display:inline-flex">
+        <div class="card m-4" data-value="1000">      
+            <img src="https://i.pinimg.com/736x/63/7d/46/637d46e89515fe3d3c523e64b7228c9c.jpg"height=300px/>
+            <p>1000</p>
+            </div>
+        <div class="card m-4"data-value="1200">      
+            <img src="https://i.pinimg.com/564x/c2/41/72/c24172f44a4d0504ff0431b32e636a49.jpg"height=300px/>
+            <p>1200</p>
+            </div>
+        
+        <div class="card m-4"  data-value="1500">      
+            <img src="https://i.pinimg.com/564x/79/c6/22/79c6227d2daece2fc31be1f8bfe42e32.jpg"height=300px/>
+            <p>1500</p>
+            </div>
+    </div>
+    
+    <div class="container demo  m-5" style="display:inline-flex">
+            <div class="card m-4" data-value="2000">      
+                <img src="https://i.pinimg.com/564x/c2/41/ea/c241eae862489726797eccd88195fab5.jpg"height=300px/>
+                <p>2000</p>
+                </div>
+            <div class="card m-4" data-value="2500">      
+                <img src="https://i.pinimg.com/564x/68/f5/a6/68f5a6faa236adcc3f951fd733c5cfca.jpg"height=300px/>
+                <p>2500</p>
+                </div>
+            <div class="card m-4" data-value="2800">      
+                <img src="https://i.pinimg.com/564x/d0/0d/28/d00d285e90da15bdccd87b114b2839b1.jpg"height=300px/>
+                <p>2800</p>
+                </div>
+               </div>
+            <div class="container  demo m-5" style="display:inline-flex">
+                <div class="card m-4" data-value="3000">      
+                    <img src="https://i.pinimg.com/564x/d0/0d/28/d00d285e90da15bdccd87b114b2839b1.jpg"height=300px/>
+                    <p>3000</p>
+                    </div>
+                <div class="card m-4" data-value="3800">      
+                    <img src="https://i.pinimg.com/564x/cc/94/83/cc948314de4ae3deef0b4c0be6959bed.jpg"height=300px/>
+                    <p>3800</p>
+                    </div>
+                <div class="card m-4" data-value="4000">      
+                    <img src="https://i.pinimg.com/564x/a7/8b/8d/a78b8dbef4d4d59dd30f7892bf4b5ca9.jpg"height=300px/>
+                    <p>4000</p>
+                    </div>
+            </div>
+            <div class="container demo m-5" style="display:inline-flex">
+                    <div class="card m-4" data-value="5000">      
+                        <img src="https://i.pinimg.com/564x/78/5e/78/785e781f585f16d178dcdff618046140.jpg"height=300px/>
+                        <p>5000</p>
+                        </div>
+                    <div class="card m-4" data-value="5500">      
+                        <img src="https://i.pinimg.com/564x/8f/49/5d/8f495d0efad1632cae46cf2474906e59.jpg"height=300px/>
+                        <p>5500</p>
+                        </div>
+                    <div class="card m-4"  data-value="6000">      
+                        <img src="https://i.pinimg.com/564x/49/ce/76/49ce765eb39e5e8dd76c81e958fd1a19.jpg"height=300px/>
+                        <p>6000</p>
+                        </div>
+                </div>
+                <div class="container  demo m-5" style="display:inline-flex">
+                        <div class="card m-4" data-value="6300">      
+                            <img src="https://i.pinimg.com/564x/d6/3f/cf/d63fcf1800d9333a253e90ef4798d19f.jpg"height=300px/>
+                            <p>6300</p>
+                            </div>
+                        <div class="card m-4" data-value="6500">      
+                            <img src="https://i.pinimg.com/564x/51/ab/97/51ab9737f6f244522d4201ca5fc0d407.jpg"height=300px/>
+                            <p>6500</p>
+                            </div>
+                        <div class="card m-4"data-value="6800">      
+                            <img src="https://i.pinimg.com/564x/d7/87/dc/d787dc57fce33ea30c6b1175d37cde33.jpg"height=300px/>
+                            <p>6800</p>
+                            </div>
+                    </div>
+
+                   
+                        <script>
+                            subBtn=document.querySelector('.submit');
+
+                            let  datavalue=document.querySelectorAll('.card');
+
+                            datavalue.forEach(function(Item){
+                                subBtn.addEventListener('click',function(){
+                                    let min=document.getElementById('minvalue').value;
+                                    let max=document.getElementById('maxvalue').value;
+                                    minPI=parseInt(min);
+                                    maxPI=parseInt(max);
+                                    let dataItems=Item.getAttribute('data-value');
+                                    if (dataItems>=minPI && dataItems<=maxPI){
+                                      Item.style.display="block";  
+                                    }
+                                    else{
+                                        Item.style.display="none";
+                                    }
+                                })
+                            })
+                        </script>
+</body>
+</html>
